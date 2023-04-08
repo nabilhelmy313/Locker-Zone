@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "PeiT6PPau9FFhRuf1EeaYxnU25A7X6yiGHMfjV+EeUmZx1wq9tDfoRrRmDRkVurix0Yx2V4PDs4WIyKFcO+v9Q==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\MTG\\Desktop\\Nabil Work\\Locker Zone\\Back\\LockerZone\\LockerZone.Application\\LockerZone.Application.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\MTG\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
+    "C:\\Users\\MTG\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512"
+  ],
+  "logs": []
+}
