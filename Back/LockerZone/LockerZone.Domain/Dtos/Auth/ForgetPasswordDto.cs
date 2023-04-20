@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace LockerZone.Domain.Dto.General.Auth
+namespace LockerZone.Domain.Dtos
 {
     public class ForgetPasswordDto
     {

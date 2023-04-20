@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace LockerZone.Domain.Resources {
+namespace Domain.Resources {
     using System;
     
     
@@ -39,7 +39,7 @@ namespace LockerZone.Domain.Resources {
         public static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("Domain.Resources.DtoResource", typeof(DtoResource).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("LockerZone.Domain.Resources.DtoResource", typeof(DtoResource).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;

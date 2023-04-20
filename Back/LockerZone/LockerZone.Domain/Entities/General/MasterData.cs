@@ -1,9 +1,7 @@
-﻿
-using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.EntityFrameworkCore;
 using System.ComponentModel.DataAnnotations;
-using System.Net.Mail;
 
-namespace Domain.Entities
+namespace LockerZone.Domain.Entities
 {
     [Index(nameof(MasterData_Code), IsUnique = true)]
     public class MasterData : BaseEntity
@@ -13,7 +11,5 @@ namespace Domain.Entities
         public string MasterData_Code { get; set; } = string.Empty;
         public string? MasterData_TitleAr { get; set; }
         public string MasterData_TitleEn { get; set; } = string.Empty;
-        public virtual ICollection<Product>? SizeProducts { get; set; }
-        public virtual ICollection<Product>? ProductsMode { get; set; }
     }
 }

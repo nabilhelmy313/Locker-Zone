@@ -1,5 +1,5 @@
 ﻿using Microsoft.AspNetCore.Identity;
-namespace Domain.Entities
+namespace LockerZone.Domain.Entities
 {
     public class ApplicationUser : IdentityUser<Guid>
     {

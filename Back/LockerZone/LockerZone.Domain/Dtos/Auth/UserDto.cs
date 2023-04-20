@@ -1,5 +1,5 @@
 ﻿
-namespace LockerZone.Domain.Dto.General.Auth
+namespace LockerZone.Domain.Dtos
 {
     public class UserDto
     {

@@ -1,0 +1,17 @@
+C:\Users\MTG\Desktop\Nabil Work\Locker Zone\Back\LockerZone\LockerZone.Application\bin\Debug\net7.0\LockerZone.Application.deps.json
+C:\Users\MTG\Desktop\Nabil Work\Locker Zone\Back\LockerZone\LockerZone.Application\bin\Debug\net7.0\LockerZone.Application.dll
+C:\Users\MTG\Desktop\Nabil Work\Locker Zone\Back\LockerZone\LockerZone.Application\bin\Debug\net7.0\LockerZone.Application.pdb
+C:\Users\MTG\Desktop\Nabil Work\Locker Zone\Back\LockerZone\LockerZone.Application\bin\Debug\net7.0\LockerZone.Domain.dll
+C:\Users\MTG\Desktop\Nabil Work\Locker Zone\Back\LockerZone\LockerZone.Application\bin\Debug\net7.0\LockerZone.Domain.pdb
+C:\Users\MTG\Desktop\Nabil Work\Locker Zone\Back\LockerZone\LockerZone.Application\obj\Debug\net7.0\LockerZone.Application.csproj.AssemblyReference.cache
+C:\Users\MTG\Desktop\Nabil Work\Locker Zone\Back\LockerZone\LockerZone.Application\obj\Debug\net7.0\LockerZone.Application.Resources.Resource.resources
+C:\Users\MTG\Desktop\Nabil Work\Locker Zone\Back\LockerZone\LockerZone.Application\obj\Debug\net7.0\LockerZone.Application.csproj.GenerateResource.cache
+C:\Users\MTG\Desktop\Nabil Work\Locker Zone\Back\LockerZone\LockerZone.Application\obj\Debug\net7.0\LockerZone.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\MTG\Desktop\Nabil Work\Locker Zone\Back\LockerZone\LockerZone.Application\obj\Debug\net7.0\LockerZone.Application.AssemblyInfoInputs.cache
+C:\Users\MTG\Desktop\Nabil Work\Locker Zone\Back\LockerZone\LockerZone.Application\obj\Debug\net7.0\LockerZone.Application.AssemblyInfo.cs
+C:\Users\MTG\Desktop\Nabil Work\Locker Zone\Back\LockerZone\LockerZone.Application\obj\Debug\net7.0\LockerZone.Application.csproj.CoreCompileInputs.cache
+C:\Users\MTG\Desktop\Nabil Work\Locker Zone\Back\LockerZone\LockerZone.Application\obj\Debug\net7.0\LockerZone.Application.csproj.CopyComplete
+C:\Users\MTG\Desktop\Nabil Work\Locker Zone\Back\LockerZone\LockerZone.Application\obj\Debug\net7.0\LockerZone.Application.dll
+C:\Users\MTG\Desktop\Nabil Work\Locker Zone\Back\LockerZone\LockerZone.Application\obj\Debug\net7.0\refint\LockerZone.Application.dll
+C:\Users\MTG\Desktop\Nabil Work\Locker Zone\Back\LockerZone\LockerZone.Application\obj\Debug\net7.0\LockerZone.Application.pdb
+C:\Users\MTG\Desktop\Nabil Work\Locker Zone\Back\LockerZone\LockerZone.Application\obj\Debug\net7.0\ref\LockerZone.Application.dll

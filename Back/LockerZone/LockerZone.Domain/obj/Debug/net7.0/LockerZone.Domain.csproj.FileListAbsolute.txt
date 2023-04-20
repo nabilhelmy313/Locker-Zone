@@ -1,0 +1,14 @@
+C:\Users\MTG\Desktop\Nabil Work\Locker Zone\Back\LockerZone\LockerZone.Domain\bin\Debug\net7.0\LockerZone.Domain.deps.json
+C:\Users\MTG\Desktop\Nabil Work\Locker Zone\Back\LockerZone\LockerZone.Domain\bin\Debug\net7.0\LockerZone.Domain.dll
+C:\Users\MTG\Desktop\Nabil Work\Locker Zone\Back\LockerZone\LockerZone.Domain\bin\Debug\net7.0\LockerZone.Domain.pdb
+C:\Users\MTG\Desktop\Nabil Work\Locker Zone\Back\LockerZone\LockerZone.Domain\obj\Debug\net7.0\LockerZone.Domain.csproj.AssemblyReference.cache
+C:\Users\MTG\Desktop\Nabil Work\Locker Zone\Back\LockerZone\LockerZone.Domain\obj\Debug\net7.0\LockerZone.Domain.Resources.DtoResource.resources
+C:\Users\MTG\Desktop\Nabil Work\Locker Zone\Back\LockerZone\LockerZone.Domain\obj\Debug\net7.0\LockerZone.Domain.csproj.GenerateResource.cache
+C:\Users\MTG\Desktop\Nabil Work\Locker Zone\Back\LockerZone\LockerZone.Domain\obj\Debug\net7.0\LockerZone.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\MTG\Desktop\Nabil Work\Locker Zone\Back\LockerZone\LockerZone.Domain\obj\Debug\net7.0\LockerZone.Domain.AssemblyInfoInputs.cache
+C:\Users\MTG\Desktop\Nabil Work\Locker Zone\Back\LockerZone\LockerZone.Domain\obj\Debug\net7.0\LockerZone.Domain.AssemblyInfo.cs
+C:\Users\MTG\Desktop\Nabil Work\Locker Zone\Back\LockerZone\LockerZone.Domain\obj\Debug\net7.0\LockerZone.Domain.csproj.CoreCompileInputs.cache
+C:\Users\MTG\Desktop\Nabil Work\Locker Zone\Back\LockerZone\LockerZone.Domain\obj\Debug\net7.0\LockerZone.Domain.dll
+C:\Users\MTG\Desktop\Nabil Work\Locker Zone\Back\LockerZone\LockerZone.Domain\obj\Debug\net7.0\refint\LockerZone.Domain.dll
+C:\Users\MTG\Desktop\Nabil Work\Locker Zone\Back\LockerZone\LockerZone.Domain\obj\Debug\net7.0\LockerZone.Domain.pdb
+C:\Users\MTG\Desktop\Nabil Work\Locker Zone\Back\LockerZone\LockerZone.Domain\obj\Debug\net7.0\ref\LockerZone.Domain.dll

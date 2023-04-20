@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace LockerZone.Application.Services
+﻿namespace LockerZone.Application.Services
 {
     public class ServiceBase
     {

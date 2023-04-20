@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "eDnCbVR9ZBU+Km7zRndSDdONZMPxg2bfbTDSCQ4ZC2M=",
+  "Source": "LockerZone.Api",
+  "BasePath": "_content/LockerZone.Api",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

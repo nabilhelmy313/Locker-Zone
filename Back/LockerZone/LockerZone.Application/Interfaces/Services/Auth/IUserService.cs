@@ -1,11 +1,10 @@
-﻿
-using LockerZone.Domain.Dto.General.Auth;
+﻿using LockerZone.Domain.Dtos;
 
 namespace LockerZone.Application.Interfaces.Services.General
 {
     public interface IUserService
     {
-        Task<ServiceResponse<TokenDto>> Token(LoginDto loginDto );
+        Task<ServiceResponse<TokenDto>> Token(LoginDto loginDto);
         Task<ServiceResponse<int>> RegisterAccounUser(RegisterDto registerAccountUserDto);
         //Task<ServiceResponse<ApplicationUser>> RegisterAccounUser(AddAspNetUserDto registerAccountUserDto, List<string> Roles, bool isEstablishUser = false);
         //Task DeletAccountUser(string userName);
