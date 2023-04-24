@@ -12,25 +12,29 @@ namespace LockerZone.Persistence.Repositories
     public class AppUserRepository : IAppUserRepository
     {
         private UserManager<ApplicationUser> _userManager;
+        private SignInManager<ApplicationUser> _signInManager;
 
-        public AppUserRepository(UserManager<ApplicationUser> userManager)
+        public AppUserRepository(UserManager<ApplicationUser> userManager, SignInManager<ApplicationUser> signInManager)
         {
             _userManager = userManager;
+            _signInManager = signInManager;
         }
 
         public async Task<TokenEntity> GetToken(string userName, string password, string topSecretKey, string issuer, string audience)
         {
-
-            var user = await _userManager.Users.Include(q => q.UserRoles).Where(q => q.UserName == userName).FirstOrDefaultAsync();
-            if (user != null && await _userManager.CheckPasswordAsync(user, password))
+            var result = await _signInManager.PasswordSignInAsync(userName, password, true, false);
+            if (result.Succeeded)
             {
+                var user = await _userManager.FindByEmailAsync(userName);
+                var roles = await _userManager.GetRolesAsync(user!);
+
                 var claims = new[]
                 {
-                        new Claim(JwtRegisteredClaimNames.NameId, user.Id.ToString()),
-                        new Claim(JwtRegisteredClaimNames.UniqueName, userName),
-                        new Claim(JwtRegisteredClaimNames.Email, user.Email),
-                        new Claim(JwtRegisteredClaimNames.GivenName,  user.FullName),
-                    };
+                            new Claim(JwtRegisteredClaimNames.NameId, user.Id.ToString()),
+                            new Claim(JwtRegisteredClaimNames.UniqueName, userName),
+                            new Claim(JwtRegisteredClaimNames.Email, user.Email),
+                            new Claim(JwtRegisteredClaimNames.GivenName,  user.FullName),
+                        };
                 if (!user.IsActive) return new TokenEntity { IsActive = false };
                 var superSecretPassword = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(topSecretKey));
 
@@ -41,19 +45,25 @@ namespace LockerZone.Persistence.Repositories
                     claims: claims,
                     signingCredentials: new SigningCredentials(superSecretPassword, SecurityAlgorithms.HmacSha256)
                 );
-
+                ApplicationRole role = new ApplicationRole
+                {
+                    Name = roles.FirstOrDefault(),
+                    NormalizedName = roles.FirstOrDefault(),
+                };
+                user.UserRoles.Add(role);
+               
                 return new TokenEntity
                 {
                     Token = new JwtSecurityTokenHandler().WriteToken(token),
                     Expiration = token.ValidTo,
                     CurrentUser = user,
-                    IsActive = user.IsActive
+                    IsActive = user.IsActive,
+                    RoleName=roles.FirstOrDefault()
                 };
             }
-
-            return new TokenEntity() ;
-
+            return new TokenEntity();
         }
+
         public async Task<ApplicationUser> GetUserByEmail(string email)
         {
             var user = await _userManager.Users.Where(x => x.Email == email).FirstOrDefaultAsync();

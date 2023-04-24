@@ -6,6 +6,7 @@ namespace LockerZone.Domain.Dtos
         public string Token { get; set; }=string.Empty;
         public DateTime Expiration { get; set; }
         public ApplicationUserDto CurrentUser { get; set; } = default!;
+        public string RoleName { get; set; } = string.Empty;
         public bool IsActive { get; set; }
     }
 

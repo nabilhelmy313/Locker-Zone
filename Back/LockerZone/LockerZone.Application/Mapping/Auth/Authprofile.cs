@@ -10,10 +10,12 @@ namespace Application.Mapping.Auth
         {
             CreateMap<ApplicationUser, RegisterDto>()
               .ReverseMap();
-            CreateMap<TokenEntity, TokenDto>().ReverseMap();
             CreateMap<ApplicationUser, ApplicationUserDto>()
                 .ForMember(c => c.ProfilePicture, c => c.Ignore())
                 .ReverseMap();
+            CreateMap<TokenEntity, TokenDto>()
+                .ReverseMap();
+            
         }
     }
 }

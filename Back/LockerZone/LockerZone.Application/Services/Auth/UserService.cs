@@ -47,13 +47,13 @@ namespace LockerZone.Application.Services.Auth
 
                 var token = await _appUserRepository.
                     GetToken(loginDto.Email, loginDto.Password, "FostaSuperSecretPassword", "Fosta.com", "Fosta.com");
-                if (token == null)
+                if (token.Token == null)
                     return new ServiceResponse<TokenDto> { Success = false, Data = null, Message = "Invaild Login" };
                 if (!token.IsActive)
                     return new ServiceResponse<TokenDto> { Success = false, Data = null, Message = "you are not accepted by admin Yet" };
 
                 var tokenModel = _Mapper.Map<TokenDto>(token);
-
+                tokenModel.CurrentUser.RoleName=tokenModel.RoleName;
                 return new ServiceResponse<TokenDto> { Success = true, Data = tokenModel, Message = "sign in succsessfully" };
             }
             catch (Exception ex)
@@ -76,7 +76,7 @@ namespace LockerZone.Application.Services.Auth
                 #endregion
                 var user = _Mapper.Map<ApplicationUser>(registerAccountUserDto);
                 user.UserName = registerAccountUserDto.Email;
-
+                user.IsActive = true;
                 var result = await _userManager.CreateAsync(user, registerAccountUserDto.Password);
                 if (!result.Succeeded) return new ServiceResponse<int>
                 {

@@ -1,0 +1,57 @@
+
+<div class="row m-0 p-0">
+  <div class="col-md-6">
+    <div class="logo-div d-flex justify-content-center">
+      <img src="../../../assets/img/WhatsApp Image 2023-04-16 at 11.14.18 PM.jpeg" class="logo">
+    </div>
+    <div class="signin-section pt-5 pb-5">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-8 col-lg-6">
+            <form [formGroup]="loginForm" class="signin-form" (ngSubmit)="onSubmit()">
+              <div class="mb-3">
+                <label for="inputEmail" class="form-label">Enter Email</label>
+                <input type="email" formControlName="email" class="form-control" id="inputEmail" placeholder="Enter Your Email" [ngClass]="{
+                  'is-valid': loginForm.get('email')?.touched && loginForm.get('email')?.valid,
+                  'is-invalid': loginForm.get('email')?.touched && loginForm.get('email')?.invalid
+                }">
+                <div class="invalid-feedback">
+                  Email is required.
+                </div>
+              </div>
+
+              <div class="mb-3">
+                <label for="inputPassword" class="form-label">Enter Password</label>
+                <input type="password" formControlName="password" class="form-control" id="inputPassword" placeholder="Enter Your Password" [ngClass]="{
+                  'is-valid': loginForm.get('password')?.touched && loginForm.get('password')?.valid,
+                  'is-invalid': loginForm.get('password')?.touched && loginForm.get('password')?.invalid
+                }">
+                <div class="invalid-feedback">
+                  Password is required.
+                </div>
+              </div>
+
+              <div class="signin-btn text-center">
+                <!-- <button type="submit" class="btn btn-primary">Sign In</button> -->
+                <app-button [text]="'Sign In'"></app-button>
+              </div>
+
+              <div class="create-btn text-center">
+                <p>Not have an account?
+                  <a href="signup.html">
+                    Create an account
+                    <i class='bx bx-chevrons-right bx-fade-right'></i>
+                  </a>
+                </p>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-6 img-div">
+    <img src="../../../assets/img/back-school-concept-with-locker.jpg" alt="" class="img">
+  </div>
+</div>
+<!-- Sign In Section End -->
