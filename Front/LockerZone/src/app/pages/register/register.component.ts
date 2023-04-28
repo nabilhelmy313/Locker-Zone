@@ -48,11 +48,6 @@ export class RegisterComponent implements OnInit {
       console.log('rresss',res);
       if (res.success) {
         this._sweetalertService.RunAlert(res.message, true);
-
-        // this._authService.sendIsLogin(true);
-        // this._router.navigate(['/']).then(()=>{
-        //   window.location.reload();
-        // });
       } else {
         this._sweetalertService.RunAlert(res.message, false);
       }

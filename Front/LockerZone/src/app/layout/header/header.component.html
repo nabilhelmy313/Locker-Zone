@@ -1,0 +1,17 @@
+
+<nav class="navbar navbar-expand-lg  bg-white">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#"><img src="../../../assets/img/WhatsApp Image 2023-04-16 at 11.14.18 PM.jpeg" alt="" width="100"></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav"  *ngFor="let menuItem of menuItems">
+        <a class="nav-link mx-md-3 px-md-4" [routerLink]="menuItem.path">
+          <i [class]="menuItem.icon"></i>
+          {{ menuItem.label }}
+        </a>
+      </div>
+    </div>
+  </div>
+</nav>
