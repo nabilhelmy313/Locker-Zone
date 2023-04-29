@@ -13,9 +13,9 @@ namespace LockerZone.Domain.Common
             public const string Login = "Api/Auth/Login";
             public const string Register = "Api/Auth/Register";
         }
-        public static class MasterData
+        public static class Feeback
         {
-            public const string AddMasterData = "Api/MasterData/AddMasterData";
+            public const string SendFeeback = "Api/Feedback/SendFeeback";
         }
 
     }

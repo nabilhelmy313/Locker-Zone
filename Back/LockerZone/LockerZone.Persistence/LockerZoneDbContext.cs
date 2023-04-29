@@ -18,6 +18,7 @@ namespace LockerZone.Persistence
         {
             base.OnModelCreating(builder);
         }
+        public DbSet<FeedbackMessage> FeedbackMessages{ get; set; }
         #region AuditSaveChanges        
         public override async Task<int> SaveChangesAsync(CancellationToken cancellationToken = new CancellationToken())
         {

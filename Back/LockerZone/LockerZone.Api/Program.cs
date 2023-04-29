@@ -1,6 +1,8 @@
 using LockerZone.Application;
 using LockerZone.Application.Interfaces.Repositories;
+using LockerZone.Application.Interfaces.Services;
 using LockerZone.Application.Interfaces.Services.General;
+using LockerZone.Application.Services;
 using LockerZone.Application.Services.Auth;
 using LockerZone.Domain.Entities;
 using LockerZone.Persistence;
@@ -101,10 +103,12 @@ builder.Services.AddCors(c =>
 #region Repo
 builder.Services.AddScoped<IAppUserRepository, AppUserRepository>();
 builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
+builder.Services.AddScoped<IFeebackRepository, FeedbackRepository>();
 #endregion
 
 #region Services
 builder.Services.AddScoped<IUserService, UserService>();
+builder.Services.AddScoped<IFeedbackService, FeedbackService>();
 
 #endregion
 var app = builder.Build();

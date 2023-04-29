@@ -37,7 +37,6 @@ namespace LockerZone.Application.Services.Auth
             _roleManager = roleManager;
             _appUserRepository = appUserRepository;
         }
-
         public async Task<ServiceResponse<TokenDto>> Token(LoginDto loginDto)
         {
             try
@@ -61,7 +60,6 @@ namespace LockerZone.Application.Services.Auth
                 return await LogError<TokenDto>(ex, default!);
             }
         }
-
         public async Task<ServiceResponse<int>> RegisterAccounUser(RegisterDto registerAccountUserDto)
         {
             try

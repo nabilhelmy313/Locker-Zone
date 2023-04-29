@@ -4,6 +4,8 @@ import { LoginComponent } from './pages/login/login.component';
 import { RegisterComponent } from './pages/register/register.component';
 import { LayoutEnum } from './models/layoutEnum';
 import { HomeComponent } from './pages/home/home.component';
+import { FeedbackComponent } from './pages/feedback/feedback.component';
+import { AboutComponent } from './pages/about/about.component';
 
 const routes: Routes = [
   // { path: '', redirectTo: '/home', pathMatch: 'full',component },
@@ -17,7 +19,11 @@ const routes: Routes = [
     // loadComponent: () => import('./pages/login/login.component')
     // .then((m) => m.LoginComponent),
   },
-  { path: 'register', component:RegisterComponent }
+  { path: 'register', component:RegisterComponent },
+  { path: 'feedback', component:FeedbackComponent },
+  { path: 'about', component:AboutComponent },
+
+
 ];
 
 @NgModule({

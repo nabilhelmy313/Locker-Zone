@@ -1,0 +1,44 @@
+<app-container>
+  <app-content-header>
+    <h3 class="text-center">Feedback</h3>
+  </app-content-header>
+  <div class="container">
+    <div class="container p-2">
+
+    <form [formGroup]="feedbackForm" class="signin-form">
+      <div class="mb-3">
+        <label for="inputname" class="form-label">Enter Your Name</label>
+        <input type="text" formControlName="name" class="form-control" id="inputname" placeholder="Enter Your Name" [ngClass]="{
+          'is-valid': feedbackForm.get('name')?.touched && feedbackForm.get('name')?.valid,
+          'is-invalid': feedbackForm.get('name')?.touched && feedbackForm.get('name')?.invalid
+        }">
+        <div class="invalid-feedback">
+          Name is required.
+        </div>
+      </div>
+      <div class="mb-3">
+        <label for="inputEmail" class="form-label">Enter Your Email</label>
+        <input type="email" formControlName="email" class="form-control" id="inputEmail" placeholder="Enter Your Email" [ngClass]="{
+          'is-valid': feedbackForm.get('email')?.touched && feedbackForm.get('email')?.valid,
+          'is-invalid': feedbackForm.get('email')?.touched && feedbackForm.get('email')?.invalid
+        }">
+        <div class="invalid-feedback">
+          Email is required.
+        </div>
+      </div>
+      <div class="mb-3">
+        <label for="inputMessage" class="form-label">Enter Your Message</label>
+        <input type="message" formControlName="message" class="form-control" id="inputMessage" placeholder="Enter Your Message" [ngClass]="{
+          'is-valid': feedbackForm.get('message')?.touched && feedbackForm.get('message')?.valid,
+          'is-invalid': feedbackForm.get('message')?.touched && feedbackForm.get('message')?.invalid
+        }">
+        <div class="invalid-feedback">
+          Message is required.
+        </div>
+      </div>
+      <app-button [text]="'Send Message'" (onClicked)="onSubmit()"></app-button>
+    </form>
+  </div>
+
+  </div>
+</app-container>

@@ -9,11 +9,14 @@ namespace Persistence
         private readonly LockerZoneDbContext _dbContext;
 
         public IMapper Mapper { get; }
+        public IFeebackRepository FeebackRepository { get; }
         public UnitOfWork(LockerZoneDbContext dbContext,
-            IMapper mapper)
+            IMapper mapper,
+            IFeebackRepository feebackRepository)
         {
             _dbContext = dbContext;
             Mapper = mapper;
+            FeebackRepository = feebackRepository;
         }
 
 
