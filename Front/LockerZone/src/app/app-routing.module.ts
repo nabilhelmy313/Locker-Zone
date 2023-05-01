@@ -9,6 +9,7 @@ import { AboutComponent } from './pages/about/about.component';
 
 const routes: Routes = [
   // { path: '', redirectTo: '/home', pathMatch: 'full',component },
+  {path:'',component:HomeComponent},
   {path:'home',component:HomeComponent},
   {
     path: 'login',

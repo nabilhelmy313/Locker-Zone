@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace LockerZone.Domain.Common
+﻿namespace LockerZone.Domain.Common
 {
     public static class RouteClass
     {
@@ -16,6 +10,14 @@ namespace LockerZone.Domain.Common
         public static class Feeback
         {
             public const string SendFeeback = "Api/Feedback/SendFeeback";
+        }
+        public static class LockerRoute
+        {
+            public const string GetLockers = "Api/Lokcer/GetLockers";
+            public const string AddLocker = "Api/Lokcer/AddLocker";
+            public const string EditLocker= "Api/Lokcer/EditLocker";
+            public const string DeleteLocker= "Api/Lokcer/DeleteLocker";
+
         }
 
     }

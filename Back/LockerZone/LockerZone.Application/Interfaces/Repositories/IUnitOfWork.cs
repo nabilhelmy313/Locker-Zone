@@ -7,5 +7,6 @@ namespace LockerZone.Application.Interfaces.Repositories
         Task<int> CommitAsync();
         public IMapper Mapper { get; }
         public IFeebackRepository FeebackRepository { get;  }
+        public ILockerRepository LockerRepository { get;  }
     }
 }

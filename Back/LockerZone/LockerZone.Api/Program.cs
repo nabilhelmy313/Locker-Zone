@@ -104,11 +104,13 @@ builder.Services.AddCors(c =>
 builder.Services.AddScoped<IAppUserRepository, AppUserRepository>();
 builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
 builder.Services.AddScoped<IFeebackRepository, FeedbackRepository>();
+builder.Services.AddScoped<ILockerRepository, LockerRepository>();
 #endregion
 
 #region Services
 builder.Services.AddScoped<IUserService, UserService>();
 builder.Services.AddScoped<IFeedbackService, FeedbackService>();
+builder.Services.AddScoped<ILockerService, LockerService>();
 
 #endregion
 var app = builder.Build();
