@@ -15,6 +15,8 @@ export class HeaderComponent implements OnInit  {
     { label: 'Lockers', path: '/address-book', icon: 'fa-solid fa-vault' },
     { label: 'Polices', path: '/polices', icon: 'fa-solid fa-building-shield' },
     { label: 'Feedback', path: '/feedback', icon: 'fa-solid fa-bug' },
-    { label: 'About', path: '/about', icon: 'fa-regular fa-address-card' }
+    { label: 'About', path: '/about', icon: 'fa-regular fa-address-card' },
+    { label: 'Add Locker', path: '/about', icon: 'fa-solid fa-file-circle-plus' },
+    { label: 'Admin Lockers', path: '/adminLockers', icon: 'fa-solid fa-vault' }
   ];
 }
