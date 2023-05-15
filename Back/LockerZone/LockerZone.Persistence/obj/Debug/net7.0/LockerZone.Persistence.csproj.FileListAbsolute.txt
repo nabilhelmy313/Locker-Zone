@@ -17,3 +17,22 @@ C:\Users\MTG\Desktop\Nabil Work\Locker Zone\Back\LockerZone\LockerZone.Persisten
 C:\Users\MTG\Desktop\Nabil Work\Locker Zone\Back\LockerZone\LockerZone.Persistence\obj\Debug\net7.0\LockerZone.Persistence.csproj.CopyComplete
 C:\Users\MTG\Desktop\Nabil Work\Locker Zone\Back\LockerZone\LockerZone.Persistence\bin\Debug\net7.0\LockerZone.Persistence.runtimeconfig.json
 C:\Users\MTG\Desktop\Nabil Work\Locker Zone\Back\LockerZone\LockerZone.Persistence\obj\Debug\net7.0\LockerZone.Persistence.genruntimeconfig.cache
+D:\Nabil\Locker-Zone\Back\LockerZone\LockerZone.Persistence\bin\Debug\net7.0\LockerZone.Persistence.deps.json
+D:\Nabil\Locker-Zone\Back\LockerZone\LockerZone.Persistence\bin\Debug\net7.0\LockerZone.Persistence.runtimeconfig.json
+D:\Nabil\Locker-Zone\Back\LockerZone\LockerZone.Persistence\bin\Debug\net7.0\LockerZone.Persistence.dll
+D:\Nabil\Locker-Zone\Back\LockerZone\LockerZone.Persistence\bin\Debug\net7.0\LockerZone.Persistence.pdb
+D:\Nabil\Locker-Zone\Back\LockerZone\LockerZone.Persistence\bin\Debug\net7.0\LockerZone.Application.dll
+D:\Nabil\Locker-Zone\Back\LockerZone\LockerZone.Persistence\bin\Debug\net7.0\LockerZone.Domain.dll
+D:\Nabil\Locker-Zone\Back\LockerZone\LockerZone.Persistence\bin\Debug\net7.0\LockerZone.Application.pdb
+D:\Nabil\Locker-Zone\Back\LockerZone\LockerZone.Persistence\bin\Debug\net7.0\LockerZone.Domain.pdb
+D:\Nabil\Locker-Zone\Back\LockerZone\LockerZone.Persistence\obj\Debug\net7.0\LockerZone.Persistence.csproj.AssemblyReference.cache
+D:\Nabil\Locker-Zone\Back\LockerZone\LockerZone.Persistence\obj\Debug\net7.0\LockerZone.Persistence.GeneratedMSBuildEditorConfig.editorconfig
+D:\Nabil\Locker-Zone\Back\LockerZone\LockerZone.Persistence\obj\Debug\net7.0\LockerZone.Persistence.AssemblyInfoInputs.cache
+D:\Nabil\Locker-Zone\Back\LockerZone\LockerZone.Persistence\obj\Debug\net7.0\LockerZone.Persistence.AssemblyInfo.cs
+D:\Nabil\Locker-Zone\Back\LockerZone\LockerZone.Persistence\obj\Debug\net7.0\LockerZone.Persistence.csproj.CoreCompileInputs.cache
+D:\Nabil\Locker-Zone\Back\LockerZone\LockerZone.Persistence\obj\Debug\net7.0\LockerZone.Persistence.csproj.CopyComplete
+D:\Nabil\Locker-Zone\Back\LockerZone\LockerZone.Persistence\obj\Debug\net7.0\LockerZone.Persistence.dll
+D:\Nabil\Locker-Zone\Back\LockerZone\LockerZone.Persistence\obj\Debug\net7.0\refint\LockerZone.Persistence.dll
+D:\Nabil\Locker-Zone\Back\LockerZone\LockerZone.Persistence\obj\Debug\net7.0\LockerZone.Persistence.pdb
+D:\Nabil\Locker-Zone\Back\LockerZone\LockerZone.Persistence\obj\Debug\net7.0\LockerZone.Persistence.genruntimeconfig.cache
+D:\Nabil\Locker-Zone\Back\LockerZone\LockerZone.Persistence\obj\Debug\net7.0\ref\LockerZone.Persistence.dll

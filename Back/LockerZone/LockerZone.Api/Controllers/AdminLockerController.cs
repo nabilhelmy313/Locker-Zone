@@ -22,6 +22,13 @@ namespace LockerZone.Api.Controllers
             var serviceResponse = await _lockerService.GetLockers();
             return Ok(serviceResponse);
         }
+        [HttpGet]
+        [Route(RouteClass.LockerRoute.GetLocker)]
+        public async Task<IActionResult> GetLocker(Guid id)
+        {
+            var serviceResponse = await _lockerService.GetLocker(id);
+            return Ok(serviceResponse);
+        }
         [HttpPost]
         [Route(RouteClass.LockerRoute.AddLocker)]
         public async Task<IActionResult> AddLocker([FromBody] AddLockerDto addLockerDto)

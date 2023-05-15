@@ -14,10 +14,11 @@
         public static class LockerRoute
         {
             public const string GetLockers = "Api/Lokcer/GetLockers";
+            public const string GetLocker = "Api/Lokcer/GetLocker";
             public const string AddLocker = "Api/Lokcer/AddLocker";
             public const string EditLocker= "Api/Lokcer/EditLocker";
             public const string DeleteLocker= "Api/Lokcer/DeleteLocker";
-
+            public const string ReserveLocker = "Api/Lokcer/ReserveLocker";
         }
 
     }

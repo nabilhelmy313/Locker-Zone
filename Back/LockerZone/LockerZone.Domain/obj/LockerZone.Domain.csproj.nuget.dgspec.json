@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\MTG\\Desktop\\Nabil Work\\Locker Zone\\Back\\LockerZone\\LockerZone.Domain\\LockerZone.Domain.csproj": {}
+    "D:\\Nabil\\Locker-Zone\\Back\\LockerZone\\LockerZone.Domain\\LockerZone.Domain.csproj": {}
   },
   "projects": {
-    "C:\\Users\\MTG\\Desktop\\Nabil Work\\Locker Zone\\Back\\LockerZone\\LockerZone.Domain\\LockerZone.Domain.csproj": {
+    "D:\\Nabil\\Locker-Zone\\Back\\LockerZone\\LockerZone.Domain\\LockerZone.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\MTG\\Desktop\\Nabil Work\\Locker Zone\\Back\\LockerZone\\LockerZone.Domain\\LockerZone.Domain.csproj",
+        "projectUniqueName": "D:\\Nabil\\Locker-Zone\\Back\\LockerZone\\LockerZone.Domain\\LockerZone.Domain.csproj",
         "projectName": "LockerZone.Domain",
-        "projectPath": "C:\\Users\\MTG\\Desktop\\Nabil Work\\Locker Zone\\Back\\LockerZone\\LockerZone.Domain\\LockerZone.Domain.csproj",
-        "packagesPath": "C:\\Users\\MTG\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\MTG\\Desktop\\Nabil Work\\Locker Zone\\Back\\LockerZone\\LockerZone.Domain\\obj\\",
+        "projectPath": "D:\\Nabil\\Locker-Zone\\Back\\LockerZone\\LockerZone.Domain\\LockerZone.Domain.csproj",
+        "packagesPath": "C:\\Users\\nabil.helmy\\.nuget\\packages\\",
+        "outputPath": "D:\\Nabil\\Locker-Zone\\Back\\LockerZone\\LockerZone.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\MTG\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\nabil.helmy\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -65,7 +65,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
         }
       }
     }

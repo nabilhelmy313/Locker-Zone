@@ -15,3 +15,20 @@ C:\Users\MTG\Desktop\Nabil Work\Locker Zone\Back\LockerZone\LockerZone.Applicati
 C:\Users\MTG\Desktop\Nabil Work\Locker Zone\Back\LockerZone\LockerZone.Application\obj\Debug\net7.0\refint\LockerZone.Application.dll
 C:\Users\MTG\Desktop\Nabil Work\Locker Zone\Back\LockerZone\LockerZone.Application\obj\Debug\net7.0\LockerZone.Application.pdb
 C:\Users\MTG\Desktop\Nabil Work\Locker Zone\Back\LockerZone\LockerZone.Application\obj\Debug\net7.0\ref\LockerZone.Application.dll
+D:\Nabil\Locker-Zone\Back\LockerZone\LockerZone.Application\bin\Debug\net7.0\LockerZone.Application.deps.json
+D:\Nabil\Locker-Zone\Back\LockerZone\LockerZone.Application\bin\Debug\net7.0\LockerZone.Application.dll
+D:\Nabil\Locker-Zone\Back\LockerZone\LockerZone.Application\bin\Debug\net7.0\LockerZone.Application.pdb
+D:\Nabil\Locker-Zone\Back\LockerZone\LockerZone.Application\bin\Debug\net7.0\LockerZone.Domain.dll
+D:\Nabil\Locker-Zone\Back\LockerZone\LockerZone.Application\bin\Debug\net7.0\LockerZone.Domain.pdb
+D:\Nabil\Locker-Zone\Back\LockerZone\LockerZone.Application\obj\Debug\net7.0\LockerZone.Application.csproj.AssemblyReference.cache
+D:\Nabil\Locker-Zone\Back\LockerZone\LockerZone.Application\obj\Debug\net7.0\LockerZone.Application.Resources.Resource.resources
+D:\Nabil\Locker-Zone\Back\LockerZone\LockerZone.Application\obj\Debug\net7.0\LockerZone.Application.csproj.GenerateResource.cache
+D:\Nabil\Locker-Zone\Back\LockerZone\LockerZone.Application\obj\Debug\net7.0\LockerZone.Application.GeneratedMSBuildEditorConfig.editorconfig
+D:\Nabil\Locker-Zone\Back\LockerZone\LockerZone.Application\obj\Debug\net7.0\LockerZone.Application.AssemblyInfoInputs.cache
+D:\Nabil\Locker-Zone\Back\LockerZone\LockerZone.Application\obj\Debug\net7.0\LockerZone.Application.AssemblyInfo.cs
+D:\Nabil\Locker-Zone\Back\LockerZone\LockerZone.Application\obj\Debug\net7.0\LockerZone.Application.csproj.CoreCompileInputs.cache
+D:\Nabil\Locker-Zone\Back\LockerZone\LockerZone.Application\obj\Debug\net7.0\LockerZone.Application.csproj.CopyComplete
+D:\Nabil\Locker-Zone\Back\LockerZone\LockerZone.Application\obj\Debug\net7.0\LockerZone.Application.dll
+D:\Nabil\Locker-Zone\Back\LockerZone\LockerZone.Application\obj\Debug\net7.0\refint\LockerZone.Application.dll
+D:\Nabil\Locker-Zone\Back\LockerZone\LockerZone.Application\obj\Debug\net7.0\LockerZone.Application.pdb
+D:\Nabil\Locker-Zone\Back\LockerZone\LockerZone.Application\obj\Debug\net7.0\ref\LockerZone.Application.dll

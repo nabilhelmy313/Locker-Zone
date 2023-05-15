@@ -12,3 +12,17 @@ C:\Users\MTG\Desktop\Nabil Work\Locker Zone\Back\LockerZone\LockerZone.Domain\ob
 C:\Users\MTG\Desktop\Nabil Work\Locker Zone\Back\LockerZone\LockerZone.Domain\obj\Debug\net7.0\refint\LockerZone.Domain.dll
 C:\Users\MTG\Desktop\Nabil Work\Locker Zone\Back\LockerZone\LockerZone.Domain\obj\Debug\net7.0\LockerZone.Domain.pdb
 C:\Users\MTG\Desktop\Nabil Work\Locker Zone\Back\LockerZone\LockerZone.Domain\obj\Debug\net7.0\ref\LockerZone.Domain.dll
+D:\Nabil\Locker-Zone\Back\LockerZone\LockerZone.Domain\bin\Debug\net7.0\LockerZone.Domain.deps.json
+D:\Nabil\Locker-Zone\Back\LockerZone\LockerZone.Domain\bin\Debug\net7.0\LockerZone.Domain.dll
+D:\Nabil\Locker-Zone\Back\LockerZone\LockerZone.Domain\bin\Debug\net7.0\LockerZone.Domain.pdb
+D:\Nabil\Locker-Zone\Back\LockerZone\LockerZone.Domain\obj\Debug\net7.0\LockerZone.Domain.csproj.AssemblyReference.cache
+D:\Nabil\Locker-Zone\Back\LockerZone\LockerZone.Domain\obj\Debug\net7.0\LockerZone.Domain.Resources.DtoResource.resources
+D:\Nabil\Locker-Zone\Back\LockerZone\LockerZone.Domain\obj\Debug\net7.0\LockerZone.Domain.csproj.GenerateResource.cache
+D:\Nabil\Locker-Zone\Back\LockerZone\LockerZone.Domain\obj\Debug\net7.0\LockerZone.Domain.GeneratedMSBuildEditorConfig.editorconfig
+D:\Nabil\Locker-Zone\Back\LockerZone\LockerZone.Domain\obj\Debug\net7.0\LockerZone.Domain.AssemblyInfoInputs.cache
+D:\Nabil\Locker-Zone\Back\LockerZone\LockerZone.Domain\obj\Debug\net7.0\LockerZone.Domain.AssemblyInfo.cs
+D:\Nabil\Locker-Zone\Back\LockerZone\LockerZone.Domain\obj\Debug\net7.0\LockerZone.Domain.csproj.CoreCompileInputs.cache
+D:\Nabil\Locker-Zone\Back\LockerZone\LockerZone.Domain\obj\Debug\net7.0\LockerZone.Domain.dll
+D:\Nabil\Locker-Zone\Back\LockerZone\LockerZone.Domain\obj\Debug\net7.0\refint\LockerZone.Domain.dll
+D:\Nabil\Locker-Zone\Back\LockerZone\LockerZone.Domain\obj\Debug\net7.0\LockerZone.Domain.pdb
+D:\Nabil\Locker-Zone\Back\LockerZone\LockerZone.Domain\obj\Debug\net7.0\ref\LockerZone.Domain.dll

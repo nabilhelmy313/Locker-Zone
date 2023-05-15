@@ -13,5 +13,7 @@ namespace LockerZone.Domain.Entities
         public DateTime FromDay { get; set; }
         public DateTime ToDay { get; set; }
         public string ? Description { get; set; }
+        public bool IsReserved{ get; set; }
+        public Guid UserId{ get; set; }
     }
 }

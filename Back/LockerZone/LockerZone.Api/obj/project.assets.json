@@ -4975,19 +4975,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\MTG\\.nuget\\packages\\": {}
+    "C:\\Users\\nabil.helmy\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\MTG\\Desktop\\Nabil Work\\Locker Zone\\Back\\LockerZone\\LockerZone.Api\\LockerZone.Api.csproj",
+      "projectUniqueName": "D:\\Nabil\\Locker-Zone\\Back\\LockerZone\\LockerZone.Api\\LockerZone.Api.csproj",
       "projectName": "LockerZone.Api",
-      "projectPath": "C:\\Users\\MTG\\Desktop\\Nabil Work\\Locker Zone\\Back\\LockerZone\\LockerZone.Api\\LockerZone.Api.csproj",
-      "packagesPath": "C:\\Users\\MTG\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\MTG\\Desktop\\Nabil Work\\Locker Zone\\Back\\LockerZone\\LockerZone.Api\\obj\\",
+      "projectPath": "D:\\Nabil\\Locker-Zone\\Back\\LockerZone\\LockerZone.Api\\LockerZone.Api.csproj",
+      "packagesPath": "C:\\Users\\nabil.helmy\\.nuget\\packages\\",
+      "outputPath": "D:\\Nabil\\Locker-Zone\\Back\\LockerZone\\LockerZone.Api\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\MTG\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\nabil.helmy\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -5001,8 +5001,8 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "C:\\Users\\MTG\\Desktop\\Nabil Work\\Locker Zone\\Back\\LockerZone\\LockerZone.Persistence\\LockerZone.Persistence.csproj": {
-              "projectPath": "C:\\Users\\MTG\\Desktop\\Nabil Work\\Locker Zone\\Back\\LockerZone\\LockerZone.Persistence\\LockerZone.Persistence.csproj"
+            "D:\\Nabil\\Locker-Zone\\Back\\LockerZone\\LockerZone.Persistence\\LockerZone.Persistence.csproj": {
+              "projectPath": "D:\\Nabil\\Locker-Zone\\Back\\LockerZone\\LockerZone.Persistence\\LockerZone.Persistence.csproj"
             }
           }
         }
@@ -5081,7 +5081,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
       }
     }
   }
