@@ -139,6 +139,7 @@ namespace LockerZone.Application.Services
             {
                 var locker=_unitOfWork.LockerRepository.FindByID(id);
                 locker.IsReserved=!locker.IsReserved;
+                locker.UserId = UserId;
                 int commit=await _unitOfWork.CommitAsync();
                 return new ServiceResponse<int>
                 {
