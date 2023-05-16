@@ -6,6 +6,9 @@ import { SharedModule } from '../shared/shared.module';
 import { HomeComponent } from './home/home.component';
 import { FeedbackComponent } from './feedback/feedback.component';
 import { AboutComponent } from './about/about.component';
+import { LockerListComponent } from './locker-list/locker-list.component';
+import { AddLockerComponent } from './add-locker/add-locker.component';
+import { EditLockerComponent } from './edit-locker/edit-locker.component';
 
 
 
@@ -15,7 +18,10 @@ import { AboutComponent } from './about/about.component';
     LoginComponent,
     RegisterComponent,
     FeedbackComponent,
-    AboutComponent
+    AboutComponent,
+    LockerListComponent,
+    AddLockerComponent,
+    EditLockerComponent
   ],
   imports: [
     CommonModule,
