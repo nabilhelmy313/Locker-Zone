@@ -24,6 +24,10 @@ export class HeaderComponent implements OnInit  {
   logout(){
     this._authService.logout();
     this._router.navigate(['login']);
+    setTimeout(() => {
+      location.reload()
+    }, 100);
+    // this.ngOnInit()
   }
   menuItems = [
     { label: 'Home', path: '/home', icon: 'fa-solid fa-house-user',role:UsersEnum.PUBLC },
