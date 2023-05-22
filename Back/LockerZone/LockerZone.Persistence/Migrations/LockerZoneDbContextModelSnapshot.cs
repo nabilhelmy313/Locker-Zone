@@ -197,6 +197,9 @@ namespace LockerZone.Persistence.Migrations
                     b.Property<DateTime>("FromDay")
                         .HasColumnType("datetime2");
 
+                    b.Property<bool>("IsReserved")
+                        .HasColumnType("bit");
+
                     b.Property<bool>("Is_Deleted")
                         .HasColumnType("bit");
 
@@ -214,6 +217,9 @@ namespace LockerZone.Persistence.Migrations
 
                     b.Property<DateTime>("ToDay")
                         .HasColumnType("datetime2");
+
+                    b.Property<Guid>("UserId")
+                        .HasColumnType("uniqueidentifier");
 
                     b.HasKey("Id");
 

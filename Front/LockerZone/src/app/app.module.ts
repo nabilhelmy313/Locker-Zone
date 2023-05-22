@@ -6,13 +6,8 @@ import { CoreModule } from './core/core.module';
 import { HTTP_INTERCEPTORS, HttpClientModule } from '@angular/common/http';
 import { AuthInterceptor } from './core/authentication/auth.interceptor';
 import { SharedModule } from './shared/shared.module';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { LoginComponent } from './pages/login/login.component';
-import { RegisterComponent } from './pages/register/register.component';
 import { PagesModule } from './pages/pages.module';
 import { MainLayoutModule } from './layout/main-layout.module';
-import { CommonModule } from '@angular/common';
-import { RouterModule } from '@angular/router';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { ButtonComponent } from './shared/components/button/button.component';
 import { HeaderComponent } from './layout/header/header.component';
@@ -33,6 +28,7 @@ import { BlankLayoutComponent } from './layout/blank-layout/blank-layout.compone
     CoreModule,
     SharedModule,
     MainLayoutModule,
+    PagesModule
 
   ],
   providers: [{ provide: HTTP_INTERCEPTORS, useClass: AuthInterceptor, multi: true }],

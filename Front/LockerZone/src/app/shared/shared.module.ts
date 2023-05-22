@@ -7,6 +7,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { ButtonComponent } from './components/button/button.component';
 import { ContainerComponent } from './components/container/container.component';
 import { ContentHeaderComponent } from './components/content-header/content-header.component';
+import { RouterModule } from '@angular/router';
 @NgModule({
   declarations: [
     ButtonComponent,
@@ -16,6 +17,7 @@ import { ContentHeaderComponent } from './components/content-header/content-head
   imports: [
     CommonModule,
     FormsModule,
+    RouterModule,
     ReactiveFormsModule,
     HttpClientModule,
     BrowserModule,

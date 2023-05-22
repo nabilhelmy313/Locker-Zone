@@ -27,8 +27,8 @@ export class AuthService {
     return this.http.post<ServiceResponse<TokenDto>>(this.loginApi, loginDto);
   }
   GetToken(){
-    // let token = JSON.parse( localStorage.getItem('token')!);
-    let token='';
+    let token = JSON.parse( localStorage.getItem('token')!);
+    // let token='';
     return token;
  }
   logout() {

@@ -5,6 +5,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
 using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
+using System.Security.Cryptography;
 using System.Text;
 
 namespace LockerZone.Persistence.Repositories
@@ -34,32 +35,49 @@ namespace LockerZone.Persistence.Repositories
                             new Claim(JwtRegisteredClaimNames.UniqueName, userName),
                             new Claim(JwtRegisteredClaimNames.Email, user.Email),
                             new Claim(JwtRegisteredClaimNames.GivenName,  user.FullName),
+                            new Claim(JwtRegisteredClaimNames.Website,  user.FullName),
                         };
                 if (!user.IsActive) return new TokenEntity { IsActive = false };
-                var superSecretPassword = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(topSecretKey));
-
+                if (Encoding.UTF8.GetBytes(topSecretKey).Length < 32)
+                {
+                    // Truncate or expand the secret key to meet the minimum key size requirement
+                    byte[] keyBytes = new byte[32];
+                    Encoding.UTF8.GetBytes(topSecretKey).CopyTo(keyBytes, 0);
+                    topSecretKey = Encoding.UTF8.GetString(keyBytes);
+                }
+                var signingKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(topSecretKey));
+                var signingCredentials = new SigningCredentials(signingKey, SecurityAlgorithms.HmacSha256);
                 var token = new JwtSecurityToken(
                     issuer: issuer,
                     audience: audience,
                     expires: DateTime.Now.AddDays(1),
                     claims: claims,
-                    signingCredentials: new SigningCredentials(superSecretPassword, SecurityAlgorithms.HmacSha256)
+                    signingCredentials: signingCredentials
                 );
+                
                 ApplicationRole role = new ApplicationRole
                 {
                     Name = roles.FirstOrDefault(),
                     NormalizedName = roles.FirstOrDefault(),
                 };
                 user.UserRoles.Add(role);
-               
-                return new TokenEntity
+
+                try
                 {
-                    Token = new JwtSecurityTokenHandler().WriteToken(token),
-                    Expiration = token.ValidTo,
-                    CurrentUser = user,
-                    IsActive = user.IsActive,
-                    RoleName=roles.FirstOrDefault()
-                };
+                    return new TokenEntity
+                    {
+                        Token = new JwtSecurityTokenHandler().WriteToken(token),
+                        Expiration = token.ValidTo,
+                        CurrentUser = user,
+                        IsActive = user.IsActive,
+                        RoleName = roles.FirstOrDefault()
+                    };
+                }
+                catch (Exception ex)
+                {
+
+                    throw;
+                }
             }
             return new TokenEntity();
         }

@@ -1,1 +1,46 @@
-<p>add-locker works!</p>
+<app-container>
+  <app-content-header>
+    <h3 class="text-center">Add Locker</h3>
+  </app-content-header>
+<form [formGroup]="addLockerForm" class="container p-2" (ngSubmit)="onSubmit()">
+  <div>
+    <label for="number">Number:</label>
+    <input type="number" class="form-control" id="number" formControlName="number" />
+    <div *ngIf="addLockerForm.get('number')?.invalid && addLockerForm.get('number')?.touched" class="text-danger">
+      Number is required.
+    </div>
+  </div>
+
+  <div>
+    <label for="price">Price:</label>
+    <input type="number" class="form-control" id="price" formControlName="price" />
+    <div *ngIf="addLockerForm.get('price')?.invalid && addLockerForm.get('price')?.touched" class="text-danger">
+      Price is required.
+    </div>
+  </div>
+
+  <div>
+    <label for="fromDay">From Day:</label>
+    <input type="date" class="form-control" id="fromDay" formControlName="fromDay" />
+    <div *ngIf="addLockerForm.get('fromDay')?.invalid && addLockerForm.get('fromDay')?.touched" class="text-danger">
+      From Day is required.
+    </div>
+  </div>
+
+  <div>
+    <label for="toDay">To Day:</label>
+    <input class="form-control" type="date" id="toDay" formControlName="toDay" />
+    <div *ngIf="addLockerForm.get('toDay')?.invalid && addLockerForm.get('toDay')?.touched" class="text-danger">
+      To Day is required.
+    </div>
+  </div>
+
+  <div>
+    <label for="description">Description:</label>
+    <textarea id="description" class="form-control" formControlName="description"></textarea>
+  </div>
+
+  <app-button [text]="'Add Locker'" (onClick)="onSubmit()"></app-button>
+</form>
+
+</app-container>

@@ -14,7 +14,6 @@ namespace LockerZone.Controllers
             get
             {
                 var s = ClaimTypes.Name;
-
                 var d = User;
                 return User.FindFirst(ClaimTypes.NameIdentifier).Value;
             }

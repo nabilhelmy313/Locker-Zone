@@ -39,6 +39,8 @@ export class RegisterComponent implements OnInit {
     console.log(this.registerForm.value);
 
     if (this.registerForm.invalid) {
+      this._sweetalertService.RunAlert('fill Needed data', false);
+
       return;
     }
     this.loading = true;

@@ -23,7 +23,12 @@ namespace LockerZone.Persistence
         #region AuditSaveChanges        
         public override async Task<int> SaveChangesAsync(CancellationToken cancellationToken = new CancellationToken())
         {
+
             var currentUserId = _httpContextAccessor.HttpContext?.User?.Claims?.FirstOrDefault(x => x.Type == ClaimTypes.NameIdentifier)?.Value;
+            if (currentUserId==null)
+            {
+                currentUserId = Guid.Empty.ToString();
+            }
             foreach (var entry in ChangeTracker.Entries<BaseEntity>())
             {
                 switch (entry.State)

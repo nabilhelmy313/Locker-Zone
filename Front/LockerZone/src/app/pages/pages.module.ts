@@ -9,6 +9,9 @@ import { AboutComponent } from './about/about.component';
 import { LockerListComponent } from './locker-list/locker-list.component';
 import { AddLockerComponent } from './add-locker/add-locker.component';
 import { EditLockerComponent } from './edit-locker/edit-locker.component';
+import { PoliciesComponent } from './policies/policies.component';
+import { RouterModule } from '@angular/router';
+import { AdminHomeComponent } from './admin-home/admin-home.component';
 
 
 
@@ -21,11 +24,14 @@ import { EditLockerComponent } from './edit-locker/edit-locker.component';
     AboutComponent,
     LockerListComponent,
     AddLockerComponent,
-    EditLockerComponent
+    EditLockerComponent,
+    PoliciesComponent,
+    AdminHomeComponent
   ],
   imports: [
     CommonModule,
-    SharedModule
+    SharedModule,
+    RouterModule
   ]
 })
 export class PagesModule { }

@@ -93,7 +93,32 @@ namespace LockerZone.Application.Services
         {
             try
             {
-                var lockers = await _unitOfWork.LockerRepository.GetAllAsync();
+                var lockers = await _unitOfWork.LockerRepository.GetAllAsync(a => !a.IsReserved);
+                var map = _unitOfWork.Mapper.Map<List<GetLockerDto>>(lockers);
+                return new ServiceResponse<List<GetLockerDto>>
+                {
+                    Data = map,
+                    Success = true,
+                    Message = CultureHelper.GetResourceMessage(Resource.ResourceManager, nameof(Resource.GetDataSuccessfully))
+
+                };
+            }
+            catch (Exception ex)
+            {
+                return new ServiceResponse<List<GetLockerDto>>
+                {
+                    Data = default!,
+                    Success = false,
+                    Message = ex.Message
+                };
+            }
+        }
+
+        public async Task<ServiceResponse<List<GetLockerDto>>> GetLockersAdmin()
+        {
+            try
+            {
+                var lockers = await _unitOfWork.LockerRepository.GetAllAsync(a => a.IsReserved);
                 var map = _unitOfWork.Mapper.Map<List<GetLockerDto>>(lockers);
                 return new ServiceResponse<List<GetLockerDto>>
                 {
@@ -137,15 +162,53 @@ namespace LockerZone.Application.Services
         {
             try
             {
-                var locker=_unitOfWork.LockerRepository.FindByID(id);
-                locker.IsReserved=!locker.IsReserved;
+                var locker = _unitOfWork.LockerRepository.FindByID(id);
+                if (locker is null)
+                {
+                    return new ServiceResponse<int>
+                    {
+                        Data = default!,
+                        Success = false,
+                        Message = CultureHelper.GetResourceMessage(Resource.ResourceManager, nameof(Resource.NotFound))
+                    };
+                }
+                locker.IsReserved = !locker.IsReserved;
                 locker.UserId = UserId;
-                int commit=await _unitOfWork.CommitAsync();
+                int commit = await _unitOfWork.CommitAsync();
                 return new ServiceResponse<int>
                 {
                     Success = true,
                     Data = commit,
-                    Message = CultureHelper.GetResourceMessage(Resource.ResourceManager, nameof(Resource.Added))
+                    Message = CultureHelper.GetResourceMessage(Resource.ResourceManager, nameof(Resource.IsReserverdSuccessfully))
+                };
+            }
+            catch (Exception ex)
+            {
+                return await LogError<int>(ex, 0);
+            }
+        }
+        public async Task<ServiceResponse<int>> RefundLocker(Guid id)
+        {
+            try
+            {
+                var locker = _unitOfWork.LockerRepository.FindByID(id);
+                if (locker is null)
+                {
+                    return new ServiceResponse<int>
+                    {
+                        Data = default!,
+                        Success = false,
+                        Message = CultureHelper.GetResourceMessage(Resource.ResourceManager, nameof(Resource.NotFound))
+                    };
+                }
+                locker.IsReserved = !locker.IsReserved;
+                locker.UserId = UserId;
+                int commit = await _unitOfWork.CommitAsync();
+                return new ServiceResponse<int>
+                {
+                    Success = true,
+                    Data = commit,
+                    Message = CultureHelper.GetResourceMessage(Resource.ResourceManager, nameof(Resource.IsReserverdSuccessfully))
                 };
             }
             catch (Exception ex)

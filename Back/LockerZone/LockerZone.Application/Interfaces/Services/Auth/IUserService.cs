@@ -6,6 +6,7 @@ namespace LockerZone.Application.Interfaces.Services.General
     {
         Task<ServiceResponse<TokenDto>> Token(LoginDto loginDto);
         Task<ServiceResponse<int>> RegisterAccounUser(RegisterDto registerAccountUserDto);
+        Task<ServiceResponse<int>> RegisterAccounAdmin(RegisterDto registerAccountUserDto);
         //Task<ServiceResponse<ApplicationUser>> RegisterAccounUser(AddAspNetUserDto registerAccountUserDto, List<string> Roles, bool isEstablishUser = false);
         //Task DeletAccountUser(string userName);
         //Task<ServiceResponse<ApplicationUser>> EditAccountUser(EditAspNetUserDto editAccountUserDto, List<string> Roles);

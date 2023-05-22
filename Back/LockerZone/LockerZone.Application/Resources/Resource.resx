@@ -135,6 +135,9 @@
   <data name="GetDataSuccessfully" xml:space="preserve">
     <value>Get Data Successfully</value>
   </data>
+  <data name="IsReserverdSuccessfully" xml:space="preserve">
+    <value>is Reserverd Successfully</value>
+  </data>
   <data name="LoginSuccesfully" xml:space="preserve">
     <value>Welcome Back </value>
   </data>

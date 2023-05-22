@@ -115,6 +115,15 @@ namespace LockerZone.Application.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to is Reserverd Successfully.
+        /// </summary>
+        public static string IsReserverdSuccessfully {
+            get {
+                return ResourceManager.GetString("IsReserverdSuccessfully", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Welcome Back .
         /// </summary>
         public static string LoginSuccesfully {

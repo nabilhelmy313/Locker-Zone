@@ -30,5 +30,13 @@ namespace LockerZone.Controllers.GeneralB
             var response = await _userService.RegisterAccounUser(RegisterDto);
             return Ok(response);
         }
+        [AllowAnonymous]
+        [HttpPost]
+        [Route(RouteClass.AuthRoute.RegisterAdmin)]
+        public async Task<IActionResult> RegisterAdmin([FromBody] RegisterDto RegisterDto)
+        {
+            var response = await _userService.RegisterAccounAdmin(RegisterDto);
+            return Ok(response);
+        }
     }
 }

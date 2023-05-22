@@ -13,11 +13,13 @@ namespace Persistence
         public ILockerRepository LockerRepository{ get; }
         public UnitOfWork(LockerZoneDbContext dbContext,
             IMapper mapper,
-            IFeebackRepository feebackRepository)
+            IFeebackRepository feebackRepository,
+            ILockerRepository lockerRepository)
         {
             _dbContext = dbContext;
             Mapper = mapper;
             FeebackRepository = feebackRepository;
+            LockerRepository = lockerRepository;
         }
 
 

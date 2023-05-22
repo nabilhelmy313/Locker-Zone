@@ -3,10 +3,12 @@ using LockerZone.Controllers;
 using LockerZone.Domain.Common;
 using LockerZone.Domain.Dtos;
 using LockerZone.Domain.Dtos.Locker;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace LockerZone.Api.Controllers
 {
+    [AllowAnonymous]
     public class AdminLockerController : ApiControllersBase
     {
         private readonly ILockerService _lockerService;
@@ -20,6 +22,13 @@ namespace LockerZone.Api.Controllers
         public async Task<IActionResult> GetLockers()
         {
             var serviceResponse = await _lockerService.GetLockers();
+            return Ok(serviceResponse);
+        }
+        [HttpGet]
+        [Route(RouteClass.LockerRoute.GetLockersAdmin)]
+        public async Task<IActionResult> GetLockersAdmin()
+        {
+            var serviceResponse = await _lockerService.GetLockersAdmin();
             return Ok(serviceResponse);
         }
         [HttpGet]
@@ -50,5 +59,6 @@ namespace LockerZone.Api.Controllers
             var token = await _lockerService.DeleteLocker(id);
             return Ok(token);
         }
+       
     }
 }

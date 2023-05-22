@@ -85,11 +85,11 @@ builder.Services.AddAuthentication(options =>
     options.TokenValidationParameters = new TokenValidationParameters
     {
         ValidateIssuerSigningKey = true,
-        IssuerSigningKey = new SymmetricSecurityKey(Encoding.ASCII.GetBytes(builder.Configuration["Jwt:Key"])),
+        IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes("P@55w0rd")),
         ValidateIssuer = true,
-        ValidIssuer = builder.Configuration["Jwt:Issuer"],
+        ValidIssuer = "LockerAdmin",
         ValidateAudience = true,
-        ValidAudience = builder.Configuration["Jwt:Audience"],
+        ValidAudience = "LockerAdmin" ,
     };
 });
 #endregion
@@ -114,7 +114,9 @@ builder.Services.AddScoped<ILockerService, LockerService>();
 
 #endregion
 var app = builder.Build();
-
+app.UseHttpsRedirection();
+app.UseAuthentication();
+app.UseAuthorization();
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {
@@ -125,9 +127,7 @@ app.UseCors(x => x
                .AllowAnyOrigin()
                .AllowAnyMethod()
                .AllowAnyHeader());
-app.UseHttpsRedirection();
 
-app.UseAuthorization();
 
 app.MapControllers();
 

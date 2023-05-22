@@ -45,7 +45,7 @@ namespace LockerZone.Application.Services.Auth
                     return new ServiceResponse<TokenDto> { Success = false, Data = null, Message = "user name or password is null" };
 
                 var token = await _appUserRepository.
-                    GetToken(loginDto.Email, loginDto.Password, "FostaSuperSecretPassword", "Fosta.com", "Fosta.com");
+                    GetToken(loginDto.Email, loginDto.Password, "P@55w0rd", "LockerAdmin", "LockerAdmin");
                 if (token.Token == null)
                     return new ServiceResponse<TokenDto> { Success = false, Data = null, Message = "Invaild Login" };
                 if (!token.IsActive)
@@ -93,6 +93,51 @@ namespace LockerZone.Application.Services.Auth
 
                 }
                 await _appUserRepository.AddRoleToUser(user, UserTypes.PUBLC.ToString());
+                return new ServiceResponse<int>
+                {
+                    Success = true,
+                    Data = 1,
+                    Message = CultureHelper.GetResourceMessage(Resource.ResourceManager, nameof(Resource.UserAddedSuccessfully))
+                };
+            }
+            catch (Exception ex)
+            {
+                return await LogError<int>(ex, 0);
+            }
+        }
+        public async Task<ServiceResponse<int>> RegisterAccounAdmin(RegisterDto registerAccountUserDto)
+        {
+            try
+            {
+                #region Guard
+                var userExists = await _appUserRepository.GetUserByEmail(registerAccountUserDto.Email);
+                if (userExists is not null) return new ServiceResponse<int>
+                {
+                    Success = false,
+                    Message = CultureHelper.GetResourceMessage(Resource.ResourceManager, nameof(Resource.UserExsistBefore))
+                };
+                #endregion
+                var user = _Mapper.Map<ApplicationUser>(registerAccountUserDto);
+                user.UserName = registerAccountUserDto.Email;
+                user.IsActive = true;
+                var result = await _userManager.CreateAsync(user, registerAccountUserDto.Password);
+                if (!result.Succeeded) return new ServiceResponse<int>
+                {
+                    Success = false,
+                    Message = CultureHelper.GetResourceMessage(Resource.ResourceManager, nameof(Resource.PleaseTryAgain))
+                };
+                var isexist = await _roleManager.RoleExistsAsync(UserTypes.PUBLC.ToString());
+                if (!isexist)
+                {
+                    await _roleManager.CreateAsync(
+                        new ApplicationRole
+                        { Name = UserTypes.PUBLC.ToString() });
+                    await _roleManager.CreateAsync(
+                       new ApplicationRole
+                       { Name = UserTypes.ADMIN.ToString() });
+
+                }
+                await _appUserRepository.AddRoleToUser(user, UserTypes.ADMIN.ToString());
                 return new ServiceResponse<int>
                 {
                     Success = true,

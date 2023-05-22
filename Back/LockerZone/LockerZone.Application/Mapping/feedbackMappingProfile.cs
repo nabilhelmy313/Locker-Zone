@@ -7,7 +7,8 @@ namespace LockerZone.Application.Mapping
     {
         public FeedbackMappingProfile()
         {
-            CreateMap<FeedbackMessage,FeedbackMessageDto>().ReverseMap();
+            CreateMap<FeedbackMessage,FeedbackMessageDto>()
+                .ReverseMap();
         }
     }
 }

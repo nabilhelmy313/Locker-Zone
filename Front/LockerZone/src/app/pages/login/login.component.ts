@@ -53,7 +53,7 @@ export class LoginComponent implements OnInit {
           JSON.stringify(res.data?.currentUser)
         ),
         // this._authService.sendIsLogin(true);
-        this._router.navigate(['/']).then(()=>{
+        this._router.navigate(['/home']).then(()=>{
           window.location.reload();
         });
       } else {
