@@ -45,6 +45,14 @@
                 <!-- <button type="submit" class="btn btn-primary">Sign In</button> -->
                 <app-button [text]="'Register'"></app-button>
               </div>
+              <div class="create-btn text-center">
+                <p>
+                  <a [routerLink]="['/login']" >
+                    Login
+                    <i class='bx bx-chevrons-right bx-fade-right'></i>
+                  </a>
+                </p>
+              </div>
             </form>
           </div>
         </div>
@@ -54,5 +62,6 @@
   <div class="col-md-6 img-div">
     <img src="../../../assets/img/back-school-concept-with-locker.jpg" alt="" class="img">
   </div>
+
 </div>
 <!-- Sign In Section End -->

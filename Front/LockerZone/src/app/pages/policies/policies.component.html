@@ -1,4 +1,4 @@
-<app-container>
+<!-- <app-container>
   <app-content-header>
     <h3 class="text-center">Polices</h3>
   </app-content-header>
@@ -7,4 +7,36 @@
     <h4>Print the receipt for the amount of the bank</h4>
     <h4>Submitting the subscription form to the fund, the bank receipt, and a copy of the study schedule, and handing it over to the competent employee</h4>
   </div>
-</app-container>
+</app-container> -->
+
+<div class="row m-0 p-0">
+  <div class="col-md-6">
+    <div class="logo-div d-flex justify-content-center">
+      <img src="../../../assets/img/WhatsApp Image 2023-04-16 at 11.14.18 PM.jpeg" class="logo">
+    </div>
+    <div class="p-2">
+      <div class="container">
+        <ul class="list-group">
+          <li class="list-group-item">Conditions for renting a safe deposit box</li>
+          <li class="list-group-item">Print the receipt for the amount of the bank</li>
+          <li class="list-group-item">Submitting the subscription form to the fund, the bank receipt, and a copy of the study schedule, and handing it over to the competent employee</li>
+          <li class="list-group-item">
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="agreeCheckbox"[checked]="true">
+              <label class="form-check-label" for="agreeCheckbox" >I agree to the policies</label>
+            </div>
+          </li>
+        </ul>
+        <div class="d-flex justify-content-between mt-3">
+          <a class="">Back to Login</a>
+          <a class="btn btn-primary" id="agreeButton"[routerLink]="['/register']" >Agree</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <div class="col-md-6 img-div">
+    <img src="../../../assets/img/back-school-concept-with-locker.jpg" alt="" class="img">
+  </div>
+</div>
+<!-- Sign In Section End -->

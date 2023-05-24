@@ -13,7 +13,7 @@ import { AdminHomeComponent } from './pages/admin-home/admin-home.component';
 
 const routes: Routes = [
   // { path: '', redirectTo: '/home', pathMatch: 'full',component },
-  {path:'',component:LoginComponent},
+  {path:'',component:PoliciesComponent},
   {path:'home',component:HomeComponent},
   {path:'homeAdmin',component:AdminHomeComponent},
   {
