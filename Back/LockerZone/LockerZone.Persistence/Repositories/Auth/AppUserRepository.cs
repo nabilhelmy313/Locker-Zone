@@ -23,7 +23,7 @@ namespace LockerZone.Persistence.Repositories
 
         public async Task<TokenEntity> GetToken(string userName, string password, string topSecretKey, string issuer, string audience)
         {
-            var result = await _signInManager.PasswordSignInAsync(userName, password, true, false);
+             var result = await _signInManager.PasswordSignInAsync(userName, password, true, false);
             if (result.Succeeded)
             {
                 var user = await _userManager.FindByEmailAsync(userName);
