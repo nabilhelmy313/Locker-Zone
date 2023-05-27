@@ -47,12 +47,9 @@ export class LoginComponent implements OnInit {
     this._authService.login(this.loginDto).subscribe((res) => {
       console.log('rresss', res);
       if (res.success) {
-        // this._sweetalertService.RunAlert(res.message, true);
+        this._sweetalertService.RunAlert(res.message, true);
         localStorage.setItem('token', JSON.stringify(res.data?.token));
-        localStorage.setItem(
-          'currentUser',
-          JSON.stringify(res.data?.currentUser)
-        );
+        localStorage.setItem('currentUser', JSON.stringify(res.data?.currentUser));
         if(res.data?.currentUser.roleName==UsersEnum.PUBLC){
           this._router.navigate(['/home']).then(() => {
             window.location.reload();

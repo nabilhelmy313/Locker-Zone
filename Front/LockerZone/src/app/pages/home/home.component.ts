@@ -1,5 +1,6 @@
 import { SweetalertService } from './../../shared/services/sweetalert.service';
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute, Router } from '@angular/router';
 import { GetLockerDto } from 'src/app/models/lockers/GetLockerDto';
 import { LockerService } from 'src/app/shared/services/locker.service';
 
@@ -12,7 +13,7 @@ export class HomeComponent implements OnInit {
   lockers: GetLockerDto[] | null = [];
   errorMessage: string = '';
 
-  constructor(private lockerService: LockerService,private _sweetalertService:SweetalertService) {}
+  constructor(private lockerService: LockerService,private _sweetalertService:SweetalertService,private route:Router) {}
 
   ngOnInit() {
     this.getLockers();
@@ -29,9 +30,10 @@ export class HomeComponent implements OnInit {
     });
   }
   resereveLocker(id:string){
-    this.lockerService.ReserveLocker(id).subscribe(res=>{
-      this._sweetalertService.RunAlert(res.message,res.success);
-      this.getLockers();
-    })
+    // this.lockerService.ReserveLocker(id).subscribe(res=>{
+    //   this._sweetalertService.RunAlert(res.message,res.success);
+    //   this.getLockers();
+    // });
+    this.route.navigate(['pay'])
   }
 }

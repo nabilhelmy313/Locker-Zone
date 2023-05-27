@@ -10,11 +10,13 @@ import { AboutComponent } from './pages/about/about.component';
 import { EditLockerComponent } from './pages/edit-locker/edit-locker.component';
 import { PoliciesComponent } from './pages/policies/policies.component';
 import { AdminHomeComponent } from './pages/admin-home/admin-home.component';
+import { PayComponent } from './pages/pay/pay.component';
 
 const routes: Routes = [
   // { path: '', redirectTo: '/home', pathMatch: 'full',component },
   {path:'',component:PoliciesComponent},
   {path:'home',component:HomeComponent},
+  {path:'pay',component:PayComponent},
   {path:'homeAdmin',component:AdminHomeComponent},
   {
     path: 'login',

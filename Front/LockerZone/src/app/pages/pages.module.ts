@@ -12,6 +12,7 @@ import { EditLockerComponent } from './edit-locker/edit-locker.component';
 import { PoliciesComponent } from './policies/policies.component';
 import { RouterModule } from '@angular/router';
 import { AdminHomeComponent } from './admin-home/admin-home.component';
+import { PayComponent } from './pay/pay.component';
 
 
 
@@ -26,7 +27,8 @@ import { AdminHomeComponent } from './admin-home/admin-home.component';
     AddLockerComponent,
     EditLockerComponent,
     PoliciesComponent,
-    AdminHomeComponent
+    AdminHomeComponent,
+    PayComponent
   ],
   imports: [
     CommonModule,

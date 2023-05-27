@@ -1,0 +1,42 @@
+<app-container>
+  <app-content-header>
+    <h2 class="text-center">pay for Lockers </h2>
+  </app-content-header>
+  <div class="row justify-content-center">
+    <div class="col-md-6">
+      <div class="card">
+        <div class="card-header">
+          <h4 class="card-title">Payment Details</h4>
+        </div>
+        <div class="card-body">
+          <form>
+            <div class="form-group">
+              <label for="name">Cardholder Name</label>
+              <input type="text" class="form-control" id="name" placeholder="Enter cardholder name" required>
+            </div>
+            <div class="form-group">
+              <label for="cardNumber">Card Number</label>
+              <input type="text" class="form-control" id="cardNumber" placeholder="Enter card number" required>
+            </div>
+            <div class="form-row">
+              <div class="form-group col-md-6">
+                <label for="expiryDate">Expiry Date</label>
+                <input type="text" class="form-control" id="expiryDate" placeholder="MM/YY" required>
+              </div>
+              <div class="form-group col-md-6">
+                <label for="cvv">CVV</label>
+                <input type="text" class="form-control" id="cvv" placeholder="CVV" required>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="amount">Amount</label>
+              <input type="text" class="form-control" id="amount" placeholder="Enter payment amount" required>
+            </div>
+            <button type="submit" class="btn btn-primary" (click)="resereveLocker('')">Pay Now</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</app-container>
